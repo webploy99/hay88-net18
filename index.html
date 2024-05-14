@@ -138,31 +138,28 @@
     <div class="main p-4 shadow">
         <!-- maquee slider -->
         <div class="overflow-hidden max-w-7xl mx-auto mt-5">
-            <div class="flex items-center justify-center"><img src="./images/text.png" class="w-10/12"></div>
+            <div class="flex items-center justify-center"><img src="./images/text.png" class="sm:w-10/12 hidden sm:block"></div>
+            <div class="flex items-center justify-center px-5 sm:hidden"><img src="./images/phone-text.png" class="sm:w-10/12"></div>
             <div class="marquee py-3 mt-3 inline-flex space-x-4 max-w-full items-center *:cursor-pointer z-10 " x-data="Marquee({speed: 1, spaceX: 4, dynamicWidthElements: true})">
-              
                 <div onclick="url()" class="flex flex-col shrink-0 overflow-hidden relative" style="background-image: url(./images/page-bg-blue.jpg)">
                     <img src="./images/maquee2.jpg" class="transition duration-500 hover:scale-110 ease-in-out z-10">
-                    <!-- <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-500 via-yellow-500 to-pink-500 opacity-60"></div> -->
                     <span class="block text-center text-md sm:text-xl font-semibold text-yellow-300 p-2 border-t border-yellow-400 bg- shadow z-10 bg-gradient-to-b from-indigo-400 to-pink-400">19-June-2024</span>
                 </div>
                 <div onclick="url()" class="flex flex-col shrink-0 overflow-hidden relative" style="background-image: url(./images/page-bg-blue.jpg)">
                     <img src="./images/maquee1.jpg" class="transition duration-500 hover:scale-110 ease-in-out z-10">
-                    <!-- <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-500 via-yellow-500 to-pink-500 opacity-60"></div> -->
                     <span class="block text-center text-md sm:text-xl font-semibold text-yellow-300 p-2 border-t border-yellow-400 bg- shadow z-10 bg-gradient-to-b from-indigo-400 to-pink-400">20-June-2024</span>
                 </div>
                 <div onclick="url()" class="flex flex-col shrink-0 overflow-hidden relative" style="background-image: url(./images/page-bg-blue.jpg)">
                     <img src="./images/maquee3.jpg" class="transition duration-500 hover:scale-110 ease-in-out z-10">
-                    <!-- <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-500 via-yellow-500 to-pink-500 opacity-60"></div> -->
                     <span class="block text-center text-md sm:text-xl font-semibold text-yellow-300 p-2 border-t border-yellow-400 bg- shadow z-10 bg-gradient-to-b from-indigo-400 to-pink-400">21-June-2024</span>
                 </div>
-                
             </div>
         </div>
 
          <!-- button click -->
          <div class="py-5 bg-[#1e73be]">
-             <div class="flex justify-center"><img src="./images/text2.png" class="sm:w-11/12"></div>
+             <div class="flex justify-center "><img src="./images/text2.png" class="sm:w-11/12 hidden sm:block"></div>
+             <div class="flex justify-center px-5"><img src="./images/phone-text2.png" class="sm:hidden"></div>
             <div class="grid sm:grid-cols-3 md:gap-0 place-items-center mt-10 text-lg text-[#6d839f] font-semibold">
                 <div class="">
                     <button onclick="url()" class="flex justify-center items-center duration-300"><img src="./images/dangky.png" class="w-10/12 sm:w-full lg:w-11/12 hover:scale-105 duration-500"></button>
@@ -179,25 +176,27 @@
             </div>
         </div>
 
+        <!-- grid images -->
         <div class="mt-10">
             <div class="grid grid-cols-3 md:grid-cols-5 gap-3 *:overflow-hidden *:border-2 *:border-yellow-500 *:rounded">
-                <div class=""><img src="./images/1.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/2.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/3.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/4.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/5.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/6.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/7.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/8.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/9.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/10.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/11.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/12.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/13.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/14.png" class="rounded hover:scale-110 duration-300"></div>
-                <div class=""><img src="./images/15.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/1.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/2.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/3.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/4.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/5.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/6.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/7.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/8.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/9.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/10.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/11.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/12.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/13.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/14.png" class="rounded hover:scale-110 duration-300"></div>
+                <div onclick="url()"><img src="./images/15.png" class="rounded hover:scale-110 duration-300"></div>
             </div>
         </div> 
+
         <!-- content -->
         <div class="mt-10">
             <span class="text-2xl font-semibold text-[#1e73be] block text-center">Hay88 ⭐️ Link Truy Cập Nhà Cái Hay88 Mới Nhất 2024</span>
